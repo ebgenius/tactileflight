@@ -2,7 +2,17 @@
 
 Source of [tactileflight.com](https://tactileflight.com), the website of the Tactile Flight ERC Starting Grant project (Salua Hamaza, BioMorphic Intelligence Lab, TU Delft).
 
-Plain static site: `index.html`, `styles.css`, `script.js`, no build step.
+Plain static site, no build step. One page per tab:
+
+| Tab | File |
+|---|---|
+| The idea | `index.html` |
+| The origins | `origins.html` |
+| Publications | `publications.html` |
+| Press | `press.html` |
+| The team | `team.html` |
+
+Shared styles in `styles.css`, shared behaviour in `script.js`. The header nav is repeated in every page: when you add or rename a tab, update it in all five files (and in `sitemap.xml`).
 
 ## Preview locally
 
@@ -21,4 +31,5 @@ python3 -m http.server 8000   # then open http://localhost:8000
 ## Content notes
 
 - Figures in `assets/` come from Ye, de Croon & Hamaza, *Nature Communications* 17, 9743 (2026), licensed CC BY 4.0. Keep the attribution captions.
-- Search the source for `TODO(project owner)`: the official ERC abstract, grant agreement number, duration and EU funding acknowledgement still need to be filled in.
+- Press news (`press.html`) mirrors the News list on [saluahamaza.eu](https://saluahamaza.eu/#one): add new items at the top of the list.
+- Search the source for `TODO(project owner)`: the NRC and BBC press links, the ERC grant agreement number and the EU funding acknowledgement still need to be filled in.
