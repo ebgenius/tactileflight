@@ -10,7 +10,7 @@
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reduce || !("IntersectionObserver" in window)) return;
 
-  var targets = document.querySelectorAll(".section-head, .prose, .pillars li, .timeline > li, .panel, .pub, .outlet, .news li, .pi-card, .placeholder");
+  var targets = document.querySelectorAll(".section-head, .prose, .timeline > li, .panel, .pub, .outlet, .news li, .pi-card, .placeholder");
   targets.forEach(function (el) { el.classList.add("reveal"); });
 
   var io = new IntersectionObserver(function (entries) {

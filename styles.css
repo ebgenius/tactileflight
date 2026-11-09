@@ -94,11 +94,6 @@ figcaption { font-size: 0.82rem; color: var(--ink-soft); margin-top: 12px; }
 .prose .big { font-family: var(--serif); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.45; color: var(--ink); }
 .note { font-size: 0.92rem; font-style: italic; color: var(--ink-soft); }
 
-.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.pillars li { background: var(--surface-dark); border: 1px solid var(--line-dark); border-radius: var(--radius); padding: 28px; }
-.pillars h3 { color: #fff; margin-bottom: 10px; }
-.pillars p { color: var(--ink-dark-soft); margin: 0; }
-.pillars .num { display: block; font-family: var(--serif); color: var(--accent-glow); font-size: 0.95rem; margin-bottom: 8px; }
 
 .next { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding: 32px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .next p { margin: 0; font-family: var(--serif); font-size: 1.3rem; }
@@ -207,7 +202,7 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
   .has-menu > a::after { display: none; }
   .hero { grid-template-columns: 1fr; padding-top: 48px; }
   .hero-media { max-width: 420px; }
-  .two, .pillars, .scholar, .outlets { grid-template-columns: 1fr; }
+  .two, .scholar, .outlets { grid-template-columns: 1fr; }
   .two { gap: 24px; }
   .pi-card { grid-template-columns: 1fr; }
   .pi-card img { max-width: 220px; }
