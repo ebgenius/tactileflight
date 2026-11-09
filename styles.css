@@ -104,7 +104,6 @@ figcaption { font-size: 0.82rem; color: var(--ink-soft); margin-top: 12px; }
 .prose .big { font-family: var(--serif); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.45; color: var(--ink); }
 .note { font-size: 0.92rem; font-style: italic; color: var(--ink-soft); }
 
-
 .next { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding: 32px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .next p { margin: 0; font-family: var(--serif); font-size: 1.3rem; }
 
@@ -152,7 +151,6 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 .logo { display: flex; align-items: center; height: 44px; }
 .logo img { max-height: 44px; width: auto; }
 .wordmark { font-family: var(--sans); font-weight: 700; font-size: 1.5rem; letter-spacing: -0.01em; }
-.wordmark.tud { color: #00a6d6; }
 .wordmark.nrc { font-family: var(--serif); font-size: 1.9rem; letter-spacing: 0.02em; }
 .wordmark.bbc { display: flex; gap: 4px; }
 .wordmark.bbc span { display: grid; place-items: center; width: 34px; height: 34px; background: var(--ink); color: #fff; font-size: 1.15rem; }
@@ -193,6 +191,8 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 .footer-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
 .footer strong { color: #fff; }
 .footer a { color: var(--ink-dark); }
+.footer-logo { display: block; flex: none; align-self: center; }
+.footer-logo img { height: 40px; width: auto; }
 .fine { font-size: 0.8rem; max-width: 80ch; margin-bottom: 0.6em; }
 
 :focus-visible { outline: 2px solid var(--accent-glow); outline-offset: 3px; }
