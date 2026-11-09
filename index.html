@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tactile Flight — drones that navigate by touch</title>
+  <meta name="description" content="Tactile Flight is an ERC Starting Grant project led by Salua Hamaza at TU Delft: giving tiny drones a sense of touch, so they can navigate where vision fails.">
+  <link rel="canonical" href="https://tactileflight.com/">
+  <meta name="theme-color" content="#050b1f">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tactile Flight — drones that navigate by touch">
+  <meta property="og:description" content="Bio-inspired whiskers let tiny drones feel their way through darkness, smoke and glass.">
+  <meta property="og:url" content="https://tactileflight.com/">
+  <meta property="og:image" content="https://tactileflight.com/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Tactile Flight, home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 26C10 22 14 14 16 4M16 26C18 22 22 14 28 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="27" r="2.5" fill="currentColor"/></svg>
+      <span>Tactile Flight</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#why">Why touch</a></li>
+        <li><a href="#whiskers">Whiskers</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#project">The project</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">ERC Starting Grant · TU Delft</p>
+        <h1>Drones that <em>feel</em> their way.</h1>
+        <p class="lead">Tactile Flight gives tiny flying robots a sense of touch, so they can navigate smoke, darkness and glass, the places where cameras and lasers fail.</p>
+        <div class="cta">
+          <a class="btn primary" href="#results">See it in flight</a>
+          <a class="btn" href="https://doi.org/10.1038/s41467-026-77366-7" rel="noopener">Read the paper</a>
+        </div>
+        <p class="pi">Led by <a href="https://saluahamaza.eu" rel="noopener">Salua Hamaza</a> · BioMorphic Intelligence Lab, Faculty of Aerospace Engineering</p>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/hero-whiskered-drone.webp" width="605" height="776" alt="A palm-sized drone with two long whiskers flying in the dark, with a rat's whiskered face shown as inset for comparison." fetchpriority="high">
+        <figcaption>A 44-gram drone with two artificial whiskers, next to the animal that inspired them. <span class="src">Ye, de Croon &amp; Hamaza, <cite>Nat. Commun.</cite> 2026 · CC BY 4.0</span></figcaption>
+      </figure>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Key figures from the first results">
+      <dl>
+        <div><dt>whisker sensing apparatus</dt><dd><span data-count="3.2" data-dec="1">3.2</span><small> g</small></dd></div>
+        <div><dt>onboard memory, 34 KB used</dt><dd><span data-count="192">192</span><small> KB</small></dd></div>
+        <div><dt>false contact alarms in free flight</dt><dd><span data-count="0">0</span><small> %</small></dd></div>
+        <div><dt>exit found, active tactile exploration</dt><dd><span data-count="90">90</span><small> %</small></dd></div>
+      </dl>
+    </section>
+
+    <!-- WHY TOUCH -->
+    <section class="section" id="why">
+      <div class="two">
+        <div>
+          <p class="eyebrow">The problem</p>
+          <h2>Small drones are blind exactly where they are needed.</h2>
+        </div>
+        <div class="prose">
+          <p>Tiny flying robots, under 100&nbsp;grams, could inspect collapsed buildings, search smoke-filled rooms or explore caves. But at that size there is almost no room for sensors, computation or battery.</p>
+          <p>Cameras need light. Lidar and time-of-flight rangefinders are fooled by glass and mirrors. GPS does not reach indoors. In smoke, darkness or clutter, the drone simply cannot see the wall it is about to hit.</p>
+          <p>Rats and moles solved this long ago. They read the world through whiskers, gently, continuously, and in the dark. <strong>Tactile Flight brings that sense to aerial robots.</strong></p>
+        </div>
+      </div>
+      <ul class="chips" aria-label="Conditions where vision fails">
+        <li>Smoke</li><li>Darkness</li><li>Glass &amp; mirrors</li><li>Dust</li><li>GPS-denied spaces</li><li>Confined spaces</li>
+      </ul>
+    </section>
+
+    <!-- WHISKERS -->
+    <section class="section dark" id="whiskers">
+      <div class="section-head">
+        <p class="eyebrow">The sensor</p>
+        <h2>A whisker, rebuilt for flight.</h2>
+        <p class="sub">Each artificial whisker mirrors the anatomy of a rat vibrissa, from shaft to follicle to nerve, at a fraction of a gram.</p>
+      </div>
+      <figure class="wide">
+        <img src="assets/fig1-whiskered-drone.webp" width="1600" height="621" alt="Diagram: the 44.1 gram Crazyflie Brushless drone with a mass breakdown, the structure of the whisker sensor, the anatomy of a rat whisker, and a photo of the drone flying beside a rat." loading="lazy">
+        <figcaption>Drone platform, whisker structure and biological counterpart. <span class="src">Fig. 1 from Ye, de Croon &amp; Hamaza (2026) · CC BY 4.0</span></figcaption>
+      </figure>
+      <ol class="anatomy">
+        <li><h3>Shaft</h3><p>A 0.4&nbsp;mm × 200&nbsp;mm Nitinol wire, flexible enough for a feather-light touch.</p></li>
+        <li><h3>Follicle</h3><p>A 3D-printed, resin-filled package that transmits and amplifies the whisker's motion.</p></li>
+        <li><h3>Receptors</h3><p>Three MEMS barometers per whisker read the pressure changes as it bends.</p></li>
+        <li><h3>Nerve</h3><p>A small microcontroller streams the signals to the flight controller, all of it onboard.</p></li>
+      </ol>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="two">
+        <div>
+          <p class="eyebrow">The method</p>
+          <h2>From a pressure blip to a map.</h2>
+        </div>
+        <div class="prose">
+          <p>Barometers drift with temperature, and propeller airflow cools them unevenly. A tactile drift compensation algorithm (<strong>TDORC</strong>) removes that drift in flight, cutting the false-positive contact rate from 38.2% with a band-pass filter alone to 0%.</p>
+          <p>A small neural network turns the signals into <strong>contact depth</strong>, and a Kalman filter fuses it with the drone's motion model. The result is millimetre-scale depth estimates, from glass to whiteboard, running at 50&nbsp;Hz.</p>
+          <p>On top sits a navigation layer that follows walls and actively explores, choosing where to touch next to reduce its uncertainty about the room.</p>
+        </div>
+      </div>
+      <figure class="wide">
+        <img src="assets/fig3-pipeline.webp" width="1600" height="1204" alt="Block diagrams of the system architecture, tactile drift compensation, tactile depth estimator and the flight state machine for navigation and exploration." loading="lazy">
+        <figcaption>The full perception-to-control pipeline, running on a microcontroller with 192 KB of RAM. <span class="src">Fig. 3 from Ye, de Croon &amp; Hamaza (2026) · CC BY 4.0</span></figcaption>
+      </figure>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="section dark" id="results">
+      <div class="section-head">
+        <p class="eyebrow">First results</p>
+        <h2>What a touch-guided drone can already do.</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="num">01</span>
+          <h3>Through invisible walls</h3>
+          <p>Flying past three transparent acrylic panels, the drone reached the target in <strong>5 of 5</strong> trials, with and without angled walls, keeping a controlled standoff of 6–10&nbsp;cm. A laser rangefinder on the same walls was noisy and failed outright when the drone was not square-on.</p>
+        </article>
+        <article class="card">
+          <span class="num">02</span>
+          <h3>In complete darkness</h3>
+          <p>Wall following worked on solid surfaces and on a soft textile flag, using only the IMU, a downward ToF sensor and touch, with no camera and no light.</p>
+        </article>
+        <article class="card">
+          <span class="num">03</span>
+          <h3>Exploring by touch alone</h3>
+          <p>In an enclosed room, active tactile exploration found the exit in <strong>90%</strong> of trials versus 10% for random exploration, building a map from contact points.</p>
+        </article>
+        <article class="card">
+          <span class="num">04</span>
+          <h3>Gentle, on purpose</h3>
+          <p>Whiskers transmit only milli-newton forces. Across 72 wall-sweep trials, mounting them at 45° kept yaw disturbance lowest and produced no crashes.</p>
+        </article>
+      </div>
+      <figure class="wide">
+        <img src="assets/fig5-depth-estimation.webp" width="1600" height="1275" alt="Photos of the drone sweeping along a whiteboard and a glass wall, with plots comparing tactile depth estimates, ground truth and a laser sensor." loading="lazy">
+        <figcaption>On glass, the laser (green) is noisy and drops out; the whisker estimate tracks ground truth (orange). <span class="src">Fig. 5 from Ye, de Croon &amp; Hamaza (2026) · CC BY 4.0</span></figcaption>
+      </figure>
+    </section>
+
+    <!-- PROJECT -->
+    <section class="section" id="project">
+      <div class="two">
+        <div>
+          <p class="eyebrow">The ERC project</p>
+          <h2>From a first whisker to a sense of touch for aerial robots.</h2>
+        </div>
+        <div class="prose">
+          <p><strong>Tactile Flight</strong> is a European Research Council Starting Grant project led by Salua Hamaza at TU Delft. It builds on earlier work in aerial robots that touch and manipulate their surroundings, and on the whisker results shown here.</p>
+          <p>The goal is to extend perception for mobile robots beyond vision, so that small aerial robots can operate autonomously in visually degraded and GPS-denied environments, from search-and-rescue and safety inspection to environmental monitoring.</p>
+          <!-- TODO(project owner): replace or extend with the official ERC project abstract, work packages, grant agreement number and duration. -->
+          <p class="note">Full project description, objectives and open positions will be published here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS & PUBLICATIONS -->
+    <section class="section dark" id="publications">
+      <div class="section-head">
+        <p class="eyebrow">Publications &amp; news</p>
+        <h2>Read, cite, reproduce.</h2>
+      </div>
+      <article class="pub">
+        <p class="pub-meta">Nature Communications · 17, 9743 · 2026 · Open access</p>
+        <h3>Whisker-based tactile flight for tiny drones</h3>
+        <p class="authors">Chaoxiang Ye, Guido de Croon &amp; Salua Hamaza</p>
+        <div class="pub-links">
+          <a class="btn primary" href="https://www.nature.com/articles/s41467-026-77366-7" rel="noopener">Nature Communications</a>
+          <a class="btn" href="https://doi.org/10.1038/s41467-026-77366-7" rel="noopener">DOI</a>
+          <a class="btn" href="https://github.com/BioMorphic-Intelligence-Lab/Whiskered-drone" rel="noopener">Code on GitHub</a>
+          <a class="btn" href="https://doi.org/10.5281/zenodo.21641894" rel="noopener">Data on Zenodo</a>
+        </div>
+      </article>
+      <ul class="news">
+        <li><a href="https://www.tudelft.nl/en/2026/lr/drones-navigating-by-touch-erc-starting-grant-for-salua-hamaza" rel="noopener"><span>TU Delft news</span>Drones navigating by touch: ERC Starting Grant for Salua Hamaza</a></li>
+        <li><a href="https://www.tudelft.nl/en/2026/lr/bio-inspired-whiskers-enable-tiny-drones-to-navigate-in-darkness-using-touch" rel="noopener"><span>TU Delft news</span>Bio-inspired whiskers enable tiny drones to navigate in darkness using touch</a></li>
+      </ul>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="section-head">
+        <p class="eyebrow">People</p>
+        <h2>Behind the first results.</h2>
+      </div>
+      <ul class="people">
+        <li>
+          <h3>Salua Hamaza</h3>
+          <p class="role">Principal investigator</p>
+          <p>BioMorphic Intelligence Lab, Faculty of Aerospace Engineering, TU Delft.</p>
+          <a href="https://saluahamaza.eu" rel="noopener">saluahamaza.eu</a>
+        </li>
+        <li>
+          <h3>Chaoxiang Ye</h3>
+          <p class="role">Lead author, whiskered drone</p>
+          <p>BioMorphic Intelligence Lab, Faculty of Aerospace Engineering, TU Delft.</p>
+        </li>
+        <li>
+          <h3>Guido de Croon</h3>
+          <p class="role">Collaborator</p>
+          <p>Micro Air Vehicle Lab, Faculty of Aerospace Engineering, TU Delft.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section dark contact" id="contact">
+      <div class="section-head">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Collaborate, study or report on Tactile Flight.</h2>
+        <p class="sub">For research enquiries and press, write to the project lead.</p>
+        <p><a class="btn primary" href="mailto:S.Hamaza@tudelft.nl">S.Hamaza@tudelft.nl</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p><strong>Tactile Flight</strong> · BioMorphic Intelligence Lab · TU Delft</p>
+      <!-- TODO(project owner): add ERC grant agreement number and the official EU funding acknowledgement / emblem as required by the grant. -->
+      <p class="fine">Funded by the European Research Council (ERC Starting Grant). Views and opinions expressed are those of the author(s) only and do not necessarily reflect those of the European Union or the ERC.</p>
+      <p class="fine">Figures from Ye, de Croon &amp; Hamaza (2026) are reproduced under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>. Earlier whisker work was funded by NWO Veni grant 20308. <a href="https://github.com/ebgenius/tactileflight" rel="noopener">Site source</a>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
