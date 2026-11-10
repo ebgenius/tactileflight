@@ -1,6 +1,6 @@
 # Tactile Flight
 
-Source of [tactileflight.com](https://tactileflight.com), the website of the Tactile Flight ERC Starting Grant project (Salua Hamaza, BioMorphic Intelligence Lab, TU Delft).
+Source of [tactileflight.com](https://tactileflight.com), the website of the Tactile Flight ERC Starting Grant project (Prof. Salua Hamaza, BioMorphic Intelligence Lab, TU Delft).
 
 Plain static site, no build step. One page per tab:
 
