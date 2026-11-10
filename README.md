@@ -22,7 +22,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Deploy (GitHub Pages + Namecheap)
 
-1. Repo **Settings → Pages**: source *Deploy from a branch*, branch `main`, folder `/ (root)`. The `CNAME` file sets the custom domain `tactileflight.com`.
+1. Repo **Settings → Pages**: source *Deploy from a branch*, branch `main`, folder `/ (root)`. Set the custom domain `tactileflight.com` there too (GitHub then commits the `CNAME` file).
 2. In Namecheap **Advanced DNS** for `tactileflight.com`:
    - four `A` records on `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - a `CNAME` record on `www` pointing to `ebgenius.github.io.`
@@ -32,4 +32,4 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 - Figures in `assets/` come from Ye, de Croon & Hamaza, *Nature Communications* 17, 9743 (2026), licensed CC BY 4.0. Keep the attribution captions.
 - Press news (`press.html`) mirrors the News list on [saluahamaza.eu](https://saluahamaza.eu/#one): add new items at the top of the list.
-- Search the source for `TODO(project owner)`: the NRC and BBC press links, the ERC grant agreement number and the EU funding acknowledgement still need to be filled in.
+- Search the source for `TODO(project owner)`: the BBC article link on the Press page is still to be added.
