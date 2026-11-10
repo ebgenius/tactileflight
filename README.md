@@ -33,3 +33,11 @@ python3 -m http.server 8000   # then open http://localhost:8000
 - Figures in `assets/` come from Ye, de Croon & Hamaza, *Nature Communications* 17, 9743 (2026), licensed CC BY 4.0. Keep the attribution captions.
 - Press news (`press.html`) mirrors the News list on [saluahamaza.eu](https://saluahamaza.eu/#one): add new items at the top of the list.
 - Search the source for `TODO(project owner)`: the BBC article link on the Press page is still to be added.
+
+## SEO
+
+- Each page has a unique title and description, a canonical URL, Open Graph and Twitter tags, and JSON-LD structured data (project, person, scholarly articles, breadcrumbs) in its `<head>`.
+- `sitemap.xml` lists every page with a `lastmod` date; update the date when a page changes, and add new pages to both the sitemap and the canonical link.
+- `404.html` is served by GitHub Pages for unknown URLs and is marked `noindex`.
+- Social card: `assets/og-image.jpg` (1200×630). Icons: `favicon.ico`, `assets/favicon.svg`, `assets/icon-192.png`, `assets/icon-512.png`, `assets/apple-touch-icon.png`.
+- Google Search Console: add `tactileflight.com` as a *Domain* property (verified with a DNS TXT record in Namecheap), then submit `https://tactileflight.com/sitemap.xml`.
