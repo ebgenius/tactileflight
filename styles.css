@@ -88,7 +88,9 @@ figcaption { font-size: 0.82rem; color: var(--ink-soft); margin-top: 12px; }
 .btn.primary:hover { background: #8df0ff; }
 .btn.scholar { background: var(--accent); color: #fff; border-color: var(--accent); }
 .btn.scholar:hover { background: #3b6df5; }
-.page-head .cta { margin-top: 28px; }
+.page-head .lead-row { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; margin-top: 20px; }
+.page-head .lead-row .lead { margin: 0; }
+.page-head .lead-row .btn { flex: none; }
 .section:not(.dark) .btn:not(.primary) { color: var(--ink); }
 .section:not(.dark) .btn:not(.primary):hover { background: rgba(11, 20, 48, 0.05); }
 
