@@ -30,7 +30,6 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Content notes
 
-- Figures in `assets/` come from Ye, de Croon & Hamaza, *Nature Communications* 17, 9743 (2026), licensed CC BY 4.0. Keep the attribution captions.
 - Press news (`press.html`) mirrors the News list on [saluahamaza.eu](https://saluahamaza.eu/#one): add new items at the top of the list.
 - Search the source for `TODO(project owner)`: the BBC article link on the Press page is still to be added.
 

@@ -77,9 +77,6 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .hero-media { margin: 0; }
 .hero-media img { border-radius: 22px; box-shadow: 0 0 0 1px var(--line-dark), 0 30px 80px rgba(36, 86, 232, 0.35); animation: float 7s ease-in-out infinite; }
 @keyframes float { 50% { transform: translateY(-8px); } }
-figcaption { font-size: 0.82rem; color: var(--ink-soft); margin-top: 12px; }
-.hero-media figcaption, .dark figcaption { color: var(--ink-dark-soft); }
-.src { display: block; opacity: 0.8; margin-top: 2px; }
 
 .cta { display: flex; flex-wrap: wrap; gap: 12px; }
 .btn { display: inline-block; padding: 12px 20px; border-radius: 999px; border: 1px solid currentColor; text-decoration: none; font-weight: 600; font-size: 0.95rem; color: var(--ink-dark); transition: transform 0.15s, background 0.15s; }
@@ -129,8 +126,6 @@ figcaption { font-size: 0.82rem; color: var(--ink-soft); margin-top: 12px; }
 .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
 .links a { font-size: 0.86rem; font-weight: 600; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--ink); }
 .links a:hover { border-color: var(--accent); color: var(--accent); }
-.timeline figure { margin: 22px 0 0; }
-.timeline figure img { border-radius: var(--radius); border: 1px solid var(--line); background: #fff; }
 .erc-card { background: var(--bg-dark); color: var(--ink-dark); border-radius: var(--radius); padding: 28px; }
 .erc-card h3 { color: #fff; }
 .erc-card p { color: var(--ink-dark-soft); }
