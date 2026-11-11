@@ -66,7 +66,7 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 
 /* PAGE HEAD */
 .page-head { background: radial-gradient(1000px 500px at 80% 0%, #0c2a7a 0%, transparent 60%), var(--bg-dark); color: var(--ink-dark); padding: 72px var(--gutter) 64px; }
-.page-head .lead { max-width: 60ch; }
+.page-head .lead { max-width: 100ch; }
 .eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.78rem; font-weight: 600; color: var(--accent); margin-bottom: 14px; }
 .page-head .eyebrow, .hero .eyebrow, .dark .eyebrow { color: var(--accent-glow); }
 .lead { font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--ink-dark-soft); margin: 20px 0 0; }
