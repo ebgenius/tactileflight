@@ -71,7 +71,8 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 
 /* HERO (The idea) */
 .hero { background: radial-gradient(1200px 600px at 75% 30%, #0c2a7a 0%, transparent 60%), var(--bg-dark); color: var(--ink-dark); display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; padding: 72px var(--gutter) 88px; overflow: hidden; }
-.hero h1 { font-family: var(--serif); line-height: 1.12; font-size: clamp(2.8rem, 7vw, 5.2rem); }
+.hero h1, .page-head h1 { font-family: var(--serif); line-height: 1.12; }
+.hero h1 { font-size: clamp(2.8rem, 7vw, 5.2rem); }
 .hero h1 em { font-style: italic; color: var(--accent-glow); text-shadow: 0 0 40px rgba(94, 230, 255, 0.45); }
 .hero .lead { max-width: 36ch; margin-bottom: 28px; }
 .hero-media { margin: 0; }
