@@ -39,5 +39,5 @@ python3 -m http.server 8000   # then open http://localhost:8000
 - Each page has a unique title and description, a canonical URL, Open Graph and Twitter tags, and JSON-LD structured data (project, person, scholarly articles, breadcrumbs) in its `<head>`.
 - `sitemap.xml` lists every page with a `lastmod` date; update the date when a page changes, and add new pages to both the sitemap and the canonical link.
 - `404.html` is served by GitHub Pages for unknown URLs and is marked `noindex`.
-- Social card: `assets/og-image.jpg` (1200×630). Icons: `favicon.ico`, `assets/favicon.svg`, `assets/icon-192.png`, `assets/icon-512.png`, `assets/apple-touch-icon.png`.
+- Social card: `assets/og-image.jpg` (1200×630). Icons: `favicon.ico` (7 sizes, 16–256 px), `assets/icon-192.png`, `assets/icon-512.png`, `assets/apple-touch-icon.png`.
 - Google Search Console: add `tactileflight.com` as a *Domain* property (verified with a DNS TXT record in Namecheap), then submit `https://tactileflight.com/sitemap.xml`.

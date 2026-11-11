@@ -27,8 +27,7 @@
   <meta name="twitter:image" content="https://tactileflight.com/assets/og-image.jpg">
   <meta name="twitter:image:alt" content="A tiny drone with two long glowing whiskers flying in the dark beside a curved blue surface.">
 
-  <link rel="icon" href="favicon.ico" sizes="48x48">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="assets/icon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -217,6 +216,48 @@
             "position": 4,
             "item": {
               "@type": "ScholarlyArticle",
+              "name": "Tactile Odometry in Aerial Physical Interaction",
+              "url": "https://antbre.github.io/Projects/tactile_odometry_drone.html",
+              "datePublished": "2024",
+              "isPartOf": {
+                "@type": "Periodical",
+                "name": "IEEE/RSJ IROS"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "ScholarlyArticle",
+              "name": "A Tactile Feedback Approach to Path Recovery After High-Speed Impacts for Collision-Resilient Drones",
+              "url": "https://www.mdpi.com/2504-446X/9/11/758",
+              "datePublished": "2025",
+              "isPartOf": {
+                "@type": "Periodical",
+                "name": "Drones"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "ScholarlyArticle",
+              "name": "Aerial Tactile Perching via an Anthropomorphic Hand with Embodied Soft Tactile Receptors",
+              "url": "https://www.nature.com/articles/s44182-026-00109-9",
+              "datePublished": "2026",
+              "isPartOf": {
+                "@type": "Periodical",
+                "name": "npj Robotics"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "ScholarlyArticle",
               "@id": "https://doi.org/10.1038/s41467-026-77366-7",
               "headline": "Whisker-based tactile flight for tiny drones",
               "name": "Whisker-based tactile flight for tiny drones",
@@ -292,7 +333,7 @@
   <header class="nav">
     <div class="nav-inner">
       <a class="brand" href="./" aria-label="Tactile Flight, home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 26C10 22 14 14 16 4M16 26C18 22 22 14 28 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="27" r="2.5" fill="currentColor"/></svg>
+        <img class="brand-mark" src="assets/logo-mark.png" width="34" height="34" alt="">
         <span>Tactile Flight</span>
       </a>
       <nav aria-label="Primary">
@@ -318,17 +359,22 @@
   <main id="main">
     <section class="page-head">
       <h1>How Tactile Flight came about.</h1>
-      <p class="lead">The original idea behind Tactile Flight built up from a few results collected over the years. Here is the story, as told by Prof. Salua Hamaza.</p>
+      <p class="lead">How the ideas behind Tactile Flight built up over the years.</p>
     </section>
 
     <section class="section">
       <ol class="timeline">
         <li>
           <span class="year">2019</span>
-          <h3>A drone that slides along a wall</h3>
-          <p class="venue">2D Contour Following with an Unmanned Aerial Manipulator: Towards Tactile-Based Aerial Navigation · Hamaza, Georgilas &amp; Richardson · IEEE/RSJ IROS 2019</p>
-          <p>The last output of my PhD showed, for the first time, the concept of <strong>aerial sliding on 2D contours</strong>: a drone equipped with a 1-DoF linear actuator was tasked to slide along a smooth 2D contour, such as a wall. I called this work “towards tactile-based aerial navigation”, because it gave the idea of something that feels its way across a wall.</p>
-          <p>Here, the only information available about the contact was the timestamped force magnitude along the axis normal to the wall. Although this was enough to stay in contact with a smooth wall, the natural follow-up question for me was: <strong>how can this generalise to different surfaces?</strong> Also, the end-effector was compliant in one direction but rigid in the others, so the yaw moments during sliding grew the longer we swiped...</p>
+          <h3>2D Contour Following with an Unmanned Aerial Manipulator: Towards Tactile-Based Aerial Navigation</h3>
+          <p class="venue">IROS 2019</p>
+          <p>In 2019, at the end of my PhD, I explored whether a drone could navigate through physical contact. Using a one-degree-of-freedom linear end-effector, the drone could maintain contact and follow a 2D contour.</p>
+          <p class="tactile"><strong>Tactile information:</strong> Force magnitude in one direction.</p>
+          <p class="oc"><strong>Open challenges:</strong></p>
+          <ul class="questions">
+            <li>How can the drone adapt to surfaces with different orientations?</li>
+            <li>How can we compensate for induced moments in yaw?</li>
+          </ul>
           <div class="links">
             <a href="https://doi.org/10.1109/IROS40897.2019.8968591" rel="noopener" target="_blank">Paper</a>
           </div>
@@ -336,9 +382,15 @@
 
         <li>
           <span class="year">2024</span>
-          <h3>Embodying compliant touch</h3>
-          <p class="venue">Embodying Compliant Touch on Drones for Aerial Tactile Navigation · Bredenbeck, Della Santina &amp; Hamaza · IEEE Robotics and Automation Letters</p>
-          <p>By 2024 I was a PI at TU Delft, and together with my PhD student Anton Bredenbeck we picked up where I had left off. This time the end-effector we developed had <strong>compliance along two axes, with two degrees of freedom</strong>. Compliance in the yaw plane allowed better tracing of angled surfaces, and therefore better contour following in general… but challenges were still visible with walls angled away from the drone, and with loss of contact.</p>
+          <h3>Embodying Compliant Touch on Drones for Aerial Tactile Navigation</h3>
+          <p class="venue">RA-L 2024</p>
+          <p>Years later, as a PI at TU Delft, I revisited these challenges with my PhD Anton Bredenbeck. We developed a two-degree-of-freedom compliant end-effector, allowing the drone to adapt to different surface orientations while reducing the moments induced during contact.</p>
+          <p class="tactile"><strong>Tactile information:</strong> Force magnitude in two directions.</p>
+          <p class="oc"><strong>Open challenges:</strong></p>
+          <ul class="questions">
+            <li>How can the drone estimate its motion while maintaining contact?</li>
+            <li>Can touch provide information about the drone's position relative to the environment?</li>
+          </ul>
           <div class="links">
             <a href="https://doi.org/10.1109/LRA.2024.3519888" rel="noopener" target="_blank">Paper</a>
             <a href="https://antbre.github.io/Projects/blind_navigation.html" rel="noopener" target="_blank">Project page</a>
@@ -348,14 +400,14 @@
 
         <li>
           <span class="year">2024</span>
-          <h3>A whisker for drones</h3>
-          <p class="venue">A Biomorphic Whisker Sensor for Aerial Tactile Applications · Ye, de Croon &amp; Hamaza · IEEE ICRA 2024</p>
-          <p>Also in 2024, together with my PhD student Chaoxiang Ye, we worked on a new tactile sensor: <strong>the whisker</strong>. It is made of pressure sensors equally spaced at the base, with a long wire centred between them. We created it to be very lightweight and low-latency, giving information about contact and how contact varies over time.</p>
-          <p>In this first work we showed that we can characterise contact localisation along the whisker shaft, answering three questions:</p>
+          <h3>A Biomorphic Whisker Sensor for Aerial Tactile Applications</h3>
+          <p class="venue">ICRA 2024</p>
+          <p>In parallel, with my PhD Chaoxiang Ye, we explored a different approach to aerial touch: a lightweight biomorphic whisker sensor. By measuring pressure at its base, the whisker could detect and localize contact while remaining extremely light.</p>
+          <p class="tactile"><strong>Tactile information:</strong> Force magnitude in three directions, and contact localization along the whisker shaft.</p>
+          <p class="oc"><strong>Open challenges:</strong></p>
           <ul class="questions">
-            <li>In which direction is the whisker bent?</li>
-            <li>By how much is it bent?</li>
-            <li>Where on the shaft is the contact causing the bending?</li>
+            <li>Can this tactile information be used to guide flight?</li>
+            <li>Can sparse tactile contacts give information about the environment?</li>
           </ul>
           <div class="links">
             <a href="https://doi.org/10.1109/ICRA57147.2024.10610850" rel="noopener" target="_blank">Paper</a>
@@ -364,10 +416,16 @@
         </li>
 
         <li>
-          <span class="year">2025</span>
-          <h3>Odometry from touch</h3>
-          <p class="venue">Tactile Odometry in Aerial Physical Interaction · Schuster, Bredenbeck, Beitelschmidt &amp; Hamaza · IEEE/RSJ IROS</p>
-          <p>Next we explored the concept of <strong>gaining drone odometry from contact with surfaces</strong>. We needed something precise that could give distance-travelled information as we swept across a wall, and we found the answer in a mouse trackball. We mounted it on the compliant end-effector and again swept along contours angled in different ways, this time also gaining odometry at contact.</p>
+          <span class="year">2024</span>
+          <h3>Tactile Odometry in Aerial Physical Interaction</h3>
+          <p class="venue">IROS 2024</p>
+          <p>Together with PhD Micha Schuster, PhD Anton Bredenbeck, and Prof. Michael Beitelschmidt, we explored whether physical contact could provide information about the drone's motion. Two trackballs integrated into the compliant end-effector measured the distance travelled along smooth walls, allowing the drone to estimate its motion while following both perpendicular and inclined surfaces.</p>
+          <p class="tactile"><strong>Tactile information:</strong> Travel distance in two directions.</p>
+          <p class="oc"><strong>Open challenges:</strong></p>
+          <ul class="questions">
+            <li>Can tactile odometry generalize to non-smooth surfaces?</li>
+            <li>Can tactile odometry work with sparse and intermittent contact?</li>
+          </ul>
           <div class="links">
             <a href="https://antbre.github.io/Projects/tactile_odometry_drone.html" rel="noopener" target="_blank">Project page</a>
             <a href="https://github.com/BioMorphic-Intelligence-Lab/tactile-odometry-drone" rel="noopener" target="_blank">Code on GitHub</a>
@@ -375,16 +433,45 @@
         </li>
 
         <li>
-          <span class="year">2026</span>
-          <h3>Whisker-based tactile flight on tiny drones</h3>
-          <p class="venue">Whisker-based Tactile Flight for Tiny Drones · Ye, de Croon &amp; Hamaza · Nature Communications 17, 9743 (2026)</p>
-          <p>This work showed a step change in the behaviours a drone could achieve using only <strong>two whiskers on a tiny drone of about 44 grams</strong>. We showed wall following with walls oriented in different ways, and also the new idea of <strong>tactile mapping from sparse contact events</strong>: the drone builds a map and finds the exit of a confined environment using only its tactile sensor data and its own odometry.</p>
-          <p>Yet many questions remain open:</p>
+          <span class="year">2025</span>
+          <h3>A Tactile Feedback Approach to Path Recovery After High-Speed Impacts for Collision-Resilient Drones</h3>
+          <p class="venue">Drones 2025</p>
+          <p>With my PhD Anton Bredenbeck, PhD Teaya Yang, and Prof. Mark Mueller, we explored how tactile feedback could help a collision-resilient drone recover after high-speed impacts. We integrated distributed binary contact sensors into a tensegrity cage, allowing the drone to localize where and when a collision occurred and use this information for trajectory recovery during high-speed flight.</p>
+          <p class="tactile"><strong>Tactile information:</strong> Distributed contact across 20 nodes around the drone cage, providing contact location and time of contact.</p>
+          <p class="oc"><strong>Open challenge:</strong></p>
           <ul class="questions">
-            <li>How do we generalise to larger environments?</li>
-            <li>How do we localise inside them?</li>
-            <li>Can we build odometry from touch?</li>
-            <li>How do we scale up while being constrained to very little flight time?</li>
+            <li>Can distributed tactile sensing provide richer information about the environment beyond collision localization?</li>
+          </ul>
+          <div class="links">
+            <a href="https://www.mdpi.com/2504-446X/9/11/758" rel="noopener" target="_blank">Paper</a>
+            <a href="https://antbre.github.io/Projects/colliding_drone.html" rel="noopener" target="_blank">Project page</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="year">2026</span>
+          <h3>Aerial Tactile Perching via an Anthropomorphic Hand with Embodied Soft Tactile Receptors</h3>
+          <p class="venue">Nature npj Robotics 2026</p>
+          <p>With my PhD Anton Bredenbeck and Anish Jadoenathmisier, we explored whether touch could guide a drone towards a perching target with unknown position and orientation. We integrated distributed tactile sensors into an anthropomorphic end-effector with soft silicone pads. The drone used tactile search trajectories to locate the target and, once contact was detected, used tactile feedback to realign itself before grasping and perching.</p>
+          <p class="tactile"><strong>Tactile information:</strong> Distributed contact across 12 locations on a moving end-effector.</p>
+          <p class="oc"><strong>Open challenge:</strong></p>
+          <ul class="questions">
+            <li>Can tactile sensing provide continuous information about the geometry of the environment?</li>
+          </ul>
+          <div class="links">
+            <a href="https://www.nature.com/articles/s44182-026-00109-9" rel="noopener" target="_blank">Paper</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="year">2026</span>
+          <h3>Whisker-based Tactile Flight for Tiny Drones</h3>
+          <p class="venue">Nature Communications 2026</p>
+          <p>With my PhD Chaoxiang Ye and Prof. Guido de Croon, we explored whether touch itself could guide autonomous flight. We equipped a 44-gram drone with two lightweight whiskers and used tactile depth estimation to avoid obstacles, follow surfaces, and explore confined environments, even in complete darkness. The entire tactile perception, navigation, and exploration pipeline ran onboard the tiny drone.</p>
+          <p class="tactile"><strong>Tactile information:</strong> Tactile depth on each of the two whiskers, providing continuous information about the distance and location of surrounding surfaces.</p>
+          <p class="oc"><strong>Open challenge:</strong></p>
+          <ul class="questions">
+            <li>Can a drone localize and build maps using touch as its primary source of environmental information?</li>
           </ul>
           <div class="links">
             <a href="https://doi.org/10.1038/s41467-026-77366-7" rel="noopener" target="_blank">Paper</a>
@@ -396,7 +483,7 @@
         <li class="erc">
           <span class="year">Now</span>
           <div class="erc-card">
-            <h3>And that is when I got this ERC grant!</h3>
+            <h3>And this is when I got this ERC grant!</h3>
             <p>Tactile Flight takes on these open questions in a five-year research programme. Follow the story from here on the Publications tab.</p>
             <a class="btn primary" href="publications.html">Go to Publications →</a>
           </div>
