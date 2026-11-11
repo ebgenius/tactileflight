@@ -76,7 +76,7 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .hero h1, .page-head h1, h2.display { font-family: var(--serif); line-height: 1.12; }
 .hero h1 { font-size: clamp(2.8rem, 7vw, 5.2rem); }
 .hero h1 em { font-style: italic; color: var(--accent-glow); text-shadow: 0 0 40px rgba(94, 230, 255, 0.45); }
-.hero .lead { max-width: 36ch; margin-bottom: 28px; }
+.hero .lead { margin-bottom: 28px; text-align: justify; text-justify: inter-word; hyphens: auto; text-wrap: pretty; }
 .hero-media { margin: 0; }
 .hero-media img { border-radius: 22px; box-shadow: 0 0 0 1px var(--line-dark), 0 30px 80px rgba(36, 86, 232, 0.35); animation: float 7s ease-in-out infinite; }
 @keyframes float { 50% { transform: translateY(-8px); } }
@@ -188,10 +188,12 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 .footer-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
 .footer strong { color: #fff; }
 .footer a { color: var(--ink-dark); }
-.footer-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; align-self: center; }
+.footer-grid > div:first-child { flex: 1 1 340px; min-width: 0; }
+.footer-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 36px; align-self: center; }
 .footer-logo { display: block; flex: none; }
-.footer-logo img { height: 40px; width: auto; }
-.footer-logo.erc img { height: 72px; }
+.footer-logo img { height: 56px; width: auto; }
+.footer-logo.erc img { height: 100px; }
+.footer-logo.site img { height: 96px; }
 .fine { font-size: 0.8rem; max-width: 80ch; margin-bottom: 0.6em; }
 
 :focus-visible { outline: 2px solid var(--accent-glow); outline-offset: 3px; }
@@ -222,6 +224,10 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 @media (max-width: 520px) {
   .news li { grid-template-columns: 1fr; gap: 6px; }
   .timeline > li { padding-left: 34px; }
+  .footer-logos { gap: 16px 24px; }
+  .footer-logo img { height: 46px; }
+  .footer-logo.erc img { height: 82px; }
+  .footer-logo.site img { height: 78px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
