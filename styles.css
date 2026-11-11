@@ -139,12 +139,13 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .pub-links { display: flex; flex-wrap: wrap; gap: 10px; }
 
 /* PRESS */
-.outlets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.outlets { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
 .outlet { display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); text-decoration: none; transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s; }
 a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: 0 12px 30px rgba(36, 86, 232, 0.12); }
 .logo { display: flex; align-items: center; height: 44px; }
 .logo img { max-height: 44px; width: auto; }
 .logo img[src*="nrc"] { height: 32px; }
+.logo img[src*="wired"] { height: 24px; }
 .wordmark { font-family: var(--sans); font-weight: 700; font-size: 1.5rem; letter-spacing: -0.01em; }
 .wordmark.bbc { display: flex; gap: 4px; }
 .wordmark.bbc span { display: grid; place-items: center; width: 34px; height: 34px; background: var(--ink); color: #fff; font-size: 1.15rem; }
@@ -209,7 +210,7 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
   .has-menu > a::after { display: none; }
   .hero { grid-template-columns: 1fr; padding-top: 48px; }
   .hero-media { max-width: 420px; }
-  .two, .outlets { grid-template-columns: 1fr; }
+  .two { grid-template-columns: 1fr; }
   .two { gap: 24px; }
   .pi-card { grid-template-columns: 1fr; }
   .pi-card img { max-width: 220px; }
