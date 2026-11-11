@@ -7,10 +7,10 @@
     strip.scrollLeft += (tab.left + tab.width / 2) - (box.left + box.width / 2);
   }
 
-  // Every link opens in a new tab, including links added later (in-page #anchors and mailto: excepted).
+  // Links to other domains open in a new tab; links within the site stay in the same tab.
+  var host = location.hostname.replace(/^www\./, "");
   document.querySelectorAll("a[href]").forEach(function (a) {
-    var h = a.getAttribute("href");
-    if (!h || h.charAt(0) === "#" || /^(mailto|tel):/i.test(h) || a.hasAttribute("download")) return;
+    if (!/^https?:$/.test(a.protocol) || a.hostname.replace(/^www\./, "") === host) return;
     a.target = "_blank";
     var rel = (a.getAttribute("rel") || "").split(/\s+/).filter(Boolean);
     if (rel.indexOf("noopener") < 0) rel.push("noopener");
