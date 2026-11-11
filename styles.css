@@ -161,7 +161,7 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 .news h3 a:hover { color: var(--accent); text-decoration: underline; }
 .news .links { margin-top: 10px; }
 .news .links a { font-size: 0.8rem; padding: 5px 12px; }
-.archive { display: inline-block; margin-top: 28px; font-weight: 600; }
+.archive { margin-top: 28px; }
 
 /* TEAM */
 .subnav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
