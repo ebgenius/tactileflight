@@ -7,6 +7,16 @@
     strip.scrollLeft += (tab.left + tab.width / 2) - (box.left + box.width / 2);
   }
 
+  // Links to other domains open in a new tab; links within the site stay in the same tab.
+  var host = location.hostname.replace(/^www\./, "");
+  document.querySelectorAll("a[href]").forEach(function (a) {
+    if (!/^https?:$/.test(a.protocol) || a.hostname.replace(/^www\./, "") === host) return;
+    a.target = "_blank";
+    var rel = (a.getAttribute("rel") || "").split(/\s+/).filter(Boolean);
+    if (rel.indexOf("noopener") < 0) rel.push("noopener");
+    a.setAttribute("rel", rel.join(" "));
+  });
+
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reduce || !("IntersectionObserver" in window)) return;
 

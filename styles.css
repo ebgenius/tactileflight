@@ -1,8 +1,10 @@
-/* Self-hosted fonts (SIL Open Font License): Inter and Fraunces, latin + latin-ext subsets. */
-@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: swap; src: url("assets/fonts/fraunces-italic-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: swap; src: url("assets/fonts/fraunces-italic-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("assets/fonts/fraunces-normal-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("assets/fonts/fraunces-normal-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* Self-hosted fonts (SIL Open Font License): Inter and Fraunces, latin + latin-ext subsets.
+   Fraunces (page titles) uses font-display: block, so the title waits for the font instead of
+   showing a fallback and visibly jumping when it swaps in; the files are preloaded. */
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: block; src: url("assets/fonts/fraunces-italic-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: block; src: url("assets/fonts/fraunces-italic-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 400 600; font-display: block; src: url("assets/fonts/fraunces-normal-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 400 600; font-display: block; src: url("assets/fonts/fraunces-normal-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: "Inter"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("assets/fonts/inter-normal-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 @font-face { font-family: "Inter"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("assets/fonts/inter-normal-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 /* Metric-matched fallback so text does not shift while Inter loads. */
@@ -35,7 +37,7 @@ html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 16px); s
 body { margin: 0; font-family: var(--sans); color: var(--ink); background: var(--bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--accent); }
-h1, h2, h3 { font-family: var(--serif); line-height: 1.12; margin: 0; font-weight: 600; }
+h1, h2, h3 { line-height: 1.15; margin: 0; font-weight: 600; }
 h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); letter-spacing: -0.02em; }
 h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); letter-spacing: -0.01em; }
 h3 { font-size: 1.2rem; }
@@ -48,7 +50,7 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 /* NAV: fixed in place, solid background */
 .nav { position: sticky; top: 0; z-index: 50; background: var(--nav); color: var(--ink-dark); border-bottom: 1px solid var(--line-dark); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: var(--nav-h); padding: 0 var(--gutter); }
-.brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; font-family: var(--serif); font-weight: 600; font-size: 1.15rem; white-space: nowrap; }
+.brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; font-weight: 600; font-size: 1.15rem; white-space: nowrap; }
 .brand-mark { width: 28px; height: 28px; color: var(--accent-glow); flex: none; }
 .tabs { display: flex; gap: 4px; }
 .tabs > li { position: relative; }
@@ -71,6 +73,7 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 
 /* HERO (The idea) */
 .hero { background: radial-gradient(1200px 600px at 75% 30%, #0c2a7a 0%, transparent 60%), var(--bg-dark); color: var(--ink-dark); display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; padding: 72px var(--gutter) 88px; overflow: hidden; }
+.hero h1, .page-head h1, h2.display { font-family: var(--serif); line-height: 1.12; }
 .hero h1 { font-size: clamp(2.8rem, 7vw, 5.2rem); }
 .hero h1 em { font-style: italic; color: var(--accent-glow); text-shadow: 0 0 40px rgba(94, 230, 255, 0.45); }
 .hero .lead { max-width: 36ch; margin-bottom: 28px; }
@@ -83,8 +86,6 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .btn:hover { transform: translateY(-1px); background: rgba(255, 255, 255, 0.08); }
 .btn.primary { background: var(--accent-glow); color: #04122e; border-color: var(--accent-glow); }
 .btn.primary:hover { background: #8df0ff; }
-.btn.scholar { background: var(--accent); color: #fff; border-color: var(--accent); }
-.btn.scholar:hover { background: #3b6df5; }
 .page-head .lead-row { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; margin-top: 20px; }
 .page-head .lead-row .lead { margin: 0; }
 .page-head .lead-row .btn { flex: none; }
@@ -103,11 +104,11 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .dark .prose p { color: var(--ink-dark-soft); }
 .prose strong { color: var(--ink); }
 .dark .prose strong { color: #fff; }
-.prose .big { font-family: var(--serif); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.45; color: var(--ink); }
+.prose .big { font-weight: 500; font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.45; color: var(--ink); }
 .note { font-size: 0.92rem; font-style: italic; color: var(--ink-soft); }
 
-.next { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding: 32px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
-.next p { margin: 0; font-family: var(--serif); font-size: 1.3rem; }
+.next { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding: 32px; border-radius: var(--radius); background: var(--bg-dark); color: var(--ink-dark); }
+.next p { margin: 0; font-weight: 500; font-size: 1.3rem; }
 
 /* ORIGINS timeline */
 .timeline { position: relative; max-width: 860px; }
@@ -115,13 +116,13 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .timeline > li { position: relative; padding-left: 44px; padding-bottom: 56px; }
 .timeline > li::before { content: ""; position: absolute; left: 0; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 3px solid var(--accent); }
 .timeline > li.erc::before { background: var(--accent-glow); border-color: var(--accent-glow); box-shadow: 0 0 0 6px rgba(94, 230, 255, 0.25); }
-.year { font-family: var(--serif); font-size: 1rem; font-weight: 600; color: var(--accent); letter-spacing: 0.04em; }
+.year { font-size: 1rem; font-weight: 600; color: var(--accent); letter-spacing: 0.04em; }
 .timeline h3 { font-size: clamp(1.3rem, 2.6vw, 1.7rem); margin: 6px 0 4px; }
 .venue { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 16px; }
 .timeline p { font-size: 1.05rem; color: var(--ink-soft); }
 .timeline strong { color: var(--ink); }
 .questions { margin: 4px 0 18px; padding-left: 0; }
-.questions li { position: relative; padding-left: 22px; color: var(--ink); font-family: var(--serif); font-style: italic; font-size: 1.08rem; margin-bottom: 6px; }
+.questions li { position: relative; padding-left: 22px; color: var(--ink); font-size: 1.08rem; margin-bottom: 6px; }
 .questions li::before { content: "?"; position: absolute; left: 0; font-style: normal; font-weight: 600; color: var(--accent); }
 .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
 .links a { font-size: 0.86rem; font-weight: 600; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--ink); }
@@ -138,12 +139,13 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .pub-links { display: flex; flex-wrap: wrap; gap: 10px; }
 
 /* PRESS */
-.outlets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.outlets { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
 .outlet { display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); text-decoration: none; transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s; }
 a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: 0 12px 30px rgba(36, 86, 232, 0.12); }
 .logo { display: flex; align-items: center; height: 44px; }
 .logo img { max-height: 44px; width: auto; }
 .logo img[src*="nrc"] { height: 32px; }
+.logo img[src*="wired"] { height: 24px; }
 .wordmark { font-family: var(--sans); font-weight: 700; font-size: 1.5rem; letter-spacing: -0.01em; }
 .wordmark.bbc { display: flex; gap: 4px; }
 .wordmark.bbc span { display: grid; place-items: center; width: 34px; height: 34px; background: var(--ink); color: #fff; font-size: 1.15rem; }
@@ -154,13 +156,13 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 
 .news li { display: grid; grid-template-columns: 92px 1fr; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--line); }
 .news li:first-child { border-top: 1px solid var(--line); }
-.news time { font-family: var(--serif); font-weight: 600; color: var(--accent); letter-spacing: 0.04em; padding-top: 2px; }
+.news time { font-weight: 600; color: var(--accent); letter-spacing: 0.04em; padding-top: 2px; }
 .news h3 { font-family: var(--sans); font-size: 1.05rem; font-weight: 600; line-height: 1.45; }
 .news h3 a { color: var(--ink); text-decoration: none; }
 .news h3 a:hover { color: var(--accent); text-decoration: underline; }
 .news .links { margin-top: 10px; }
 .news .links a { font-size: 0.8rem; padding: 5px 12px; }
-.archive { display: inline-block; margin-top: 28px; font-weight: 600; }
+.archive { margin-top: 28px; }
 
 /* TEAM */
 .subnav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
@@ -208,7 +210,7 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
   .has-menu > a::after { display: none; }
   .hero { grid-template-columns: 1fr; padding-top: 48px; }
   .hero-media { max-width: 420px; }
-  .two, .outlets { grid-template-columns: 1fr; }
+  .two { grid-template-columns: 1fr; }
   .two { gap: 24px; }
   .pi-card { grid-template-columns: 1fr; }
   .pi-card img { max-width: 220px; }

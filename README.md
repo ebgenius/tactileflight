@@ -30,6 +30,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Content notes
 
+- Links to other domains open in a new tab (`target="_blank" rel="noopener"`); links within the site stay in the same tab. `script.js` also applies it at page load to any external link in the HTML that was written without the attributes; links injected into the page after load are not covered.
 - Press news (`press.html`) mirrors the News list on [saluahamaza.eu](https://saluahamaza.eu/#one): add new items at the top of the list.
 - Search the source for `TODO(project owner)`: the BBC article link on the Press page is still to be added.
 
