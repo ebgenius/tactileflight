@@ -173,6 +173,7 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 .group { padding-top: 8px; margin-bottom: 64px; }
 .group:last-child { margin-bottom: 0; }
 .group > h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 20px; }
+.outlet p { margin: 0; max-width: 80ch; color: var(--ink-soft); }
 .pi-card { display: grid; grid-template-columns: 240px 1fr; gap: 36px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
 .pi-card img { border-radius: 12px; aspect-ratio: 1; object-fit: cover; width: 100%; }
 .pi-card h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
