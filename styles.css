@@ -184,6 +184,9 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 .person { display: flex; flex-direction: column; gap: 6px; height: 100%; padding: 14px 14px 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); text-decoration: none; transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s; }
 .person:hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: 0 12px 30px rgba(36, 86, 232, 0.12); }
 .person img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: top center; border-radius: 10px; margin-bottom: 8px; background: var(--bg); }
+.person .portrait { position: relative; flex: none; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 10px; margin-bottom: 8px; background: var(--bg); }
+.person .portrait img { position: absolute; top: -6%; left: -25%; width: 150%; max-width: none; height: auto; aspect-ratio: auto; }
+.person .portrait-anton img { top: -12%; left: -28%; }
 .person h3 { font-size: 1.05rem; }
 .person .more { margin-top: auto; font-size: 0.85rem; font-weight: 600; color: var(--accent); }
 .placeholder { display: flex; align-items: center; gap: 16px; padding: 28px 32px; border: 1px dashed var(--line); border-radius: var(--radius); color: var(--ink-soft); background: var(--surface); }
