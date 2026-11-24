@@ -187,6 +187,7 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 .person .portrait { position: relative; flex: none; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 10px; margin-bottom: 8px; background: var(--bg); }
 .person .portrait img { position: absolute; top: -6%; left: -25%; width: 150%; max-width: none; height: auto; aspect-ratio: auto; }
 .person .portrait-anton img { top: -12%; left: -28%; }
+.person .portrait-teresa img { top: -61%; left: -51%; width: 205%; }
 .person h3 { font-size: 1.05rem; }
 .person .more { margin-top: auto; font-size: 0.85rem; font-weight: 600; color: var(--accent); }
 .placeholder { display: flex; align-items: center; gap: 16px; padding: 28px 32px; border: 1px dashed var(--line); border-radius: var(--radius); color: var(--ink-soft); background: var(--surface); }
