@@ -175,7 +175,7 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 .group > h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 20px; }
 .outlet p { margin: 0; max-width: 80ch; color: var(--ink-soft); }
 .pi-card { display: grid; grid-template-columns: 240px 1fr; gap: 36px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
-.pi-card img { border-radius: 12px; aspect-ratio: 1; object-fit: cover; width: 100%; }
+.pi-card img { border-radius: 12px; aspect-ratio: 1; object-fit: cover; object-position: center 24%; width: 100%; }
 .pi-card h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .role { color: var(--accent); font-size: 0.92rem; font-weight: 600; margin: 6px 0 16px; }
 .pi-card p:not(.role) { color: var(--ink-soft); }
