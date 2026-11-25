@@ -147,7 +147,7 @@ a.outlet:hover { transform: translateY(-2px); border-color: var(--accent); box-s
 .logo { display: flex; align-items: center; height: 44px; }
 .logo img { max-height: 44px; width: auto; }
 .logo img[src*="nrc"] { height: 32px; }
-.logo img[src*="wired"] { height: 24px; }
+.logo img[src*="wired"] { height: 34px; }
 .wordmark { font-family: var(--sans); font-weight: 700; font-size: 1.5rem; letter-spacing: -0.01em; }
 .wordmark.bbc { display: flex; gap: 4px; }
 .wordmark.bbc span { display: grid; place-items: center; width: 34px; height: 34px; background: var(--ink); color: #fff; font-size: 1.15rem; }
